@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WAD.WebApp._7986.BookRent.Models.Book>
+﻿@model IEnumerable<WAD.WebApp._7986.BookRent.Models.IndexBook>
 
 @{
     ViewBag.Title = "Index";
@@ -7,15 +7,16 @@
 <h2>Book Details</h2>
 <hr />
 
-<button class="">@Html.ActionLink("Add Books", "AddBooks", new { id = 1 })</button>
+<button class="">@Html.ActionLink("Add Books", "AddBook")</button>
 
 
 <table class="table">
     <thead>
         <tr>
-            <th>@Html.DisplayNameFor(m => m.Title)</th>
-            <th>@Html.DisplayNameFor(m => m.Author)</th>
-            <th>@Html.DisplayNameFor(m => m.PublishedDate)</th>
+            <th>@Html.DisplayNameFor(m => m.Book.Title)</th>
+            <th>@Html.DisplayNameFor(m => m.Book.Author)</th>
+            <th>@Html.DisplayNameFor(m => m.Book.PublishedDate)</th>
+            <th>@Html.DisplayNameFor(m => m.Book.GenreId)</th>
         </tr>
     </thead>
 
@@ -23,13 +24,14 @@
     <tbody>
         @foreach (var book in Model)
         {
-            <tr>
-                <td>@book.Title</td>
-                <td>@book.Author</td>
-                <td>@book.PublishedDate</td>
-                <td>@Html.ActionLink("Edit", "Edit", new { id = book.BookId})</td>
-                <td>@Html.ActionLink("Delete", "Delete", new { id = book.BookId})</td>
-            </tr>
+        <tr>
+            <td>@book.Book.Title</td>
+            <td>@book.Book.Author</td>
+            <td>@book.Book.PublishedDate</td>
+            <td>@book.Genre.GenreName</td>
+            <td>@Html.ActionLink("Edit", "Edit", new { id = book.Book.BookId })</td>
+            <td>@Html.ActionLink("Delete", "Delete", new { id = book.Book.BookId })</td>
+        </tr>
 
         }
     </tbody>

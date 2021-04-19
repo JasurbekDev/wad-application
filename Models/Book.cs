@@ -15,9 +15,10 @@ namespace WAD.WebApp._7986.BookRent.Models
         public string Title { get; set; }
         [Display(Name = "Author")]
         public string Author { get; set; }
-
         [Display(Name = "Published Date")]
         public DateTime? PublishedDate { get; set; }
+        [Display(Name = "Genre")]
+        public int GenreId { get; set; }
 
     }
 }

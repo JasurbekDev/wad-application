@@ -6,10 +6,9 @@ using WAD.WebApp._7986.BookRent.Models;
 
 namespace WAD.WebApp._7986.BookRent.ViewModels
 {
-    public class BookFormViewModel
+    public class BookListViewModel
     {
-        public Book Book { get; set; }
+        public List<Book> Books { get; set; }
         public List<Genre> Genres { get; set; }
-
     }
 }

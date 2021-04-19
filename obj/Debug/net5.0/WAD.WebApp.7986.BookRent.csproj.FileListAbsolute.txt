@@ -127,7 +127,8 @@ D:\WADApp\WAD.WebApp.7986.BookRent\bin\Debug\net5.0\runtimes\win-x86\native\sni.
 D:\WADApp\WAD.WebApp.7986.BookRent\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\WADApp\WAD.WebApp.7986.BookRent\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\WADApp\WAD.WebApp.7986.BookRent\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\WADApp\WAD.WebApp.7986.BookRent\obj\Debug\net5.0\WAD.WebApp._7986.BookRent.Migrations.BookModels.resources
-D:\WADApp\WAD.WebApp.7986.BookRent\obj\Debug\net5.0\WAD.WebApp.7986.BookRent.csproj.GenerateResource.cache
-D:\WADApp\WAD.WebApp.7986.BookRent\obj\Debug\net5.0\WAD.WebApp._7986.BookRent.Migrations.UpdateBookData.resources
 D:\WADApp\WAD.WebApp.7986.BookRent\obj\Debug\net5.0\Razor\Views\Book\BookForm.cshtml.g.cs
+D:\WADApp\WAD.WebApp.7986.BookRent\obj\Debug\net5.0\WAD.WebApp.7986.BookRent.csproj.GenerateResource.cache
+D:\WADApp\WAD.WebApp.7986.BookRent\obj\Debug\net5.0\WAD.WebApp._7986.BookRent.Migrations.BookGenreModels.resources
+D:\WADApp\WAD.WebApp.7986.BookRent\obj\Debug\net5.0\WAD.WebApp._7986.BookRent.Migrations.UpdateGenreData.resources
+D:\WADApp\WAD.WebApp.7986.BookRent\obj\Debug\net5.0\WAD.WebApp._7986.BookRent.Migrations.UpdateBookData.resources

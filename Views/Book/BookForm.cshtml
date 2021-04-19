@@ -22,11 +22,16 @@
 
     <div class="form-group">
         @Html.LabelFor(m => m.Book.PublishedDate)
-        @Html.TextBoxFor(m => m.Book.PublishedDate, new { @class = "form-control" })
+        @Html.TextBoxFor(m => m.Book.PublishedDate, "{0:d MMM yyyy}", new { @class = "form-control", @type = "date" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Book.GenreId)
+        @Html.DropDownListFor(m => m.Book.GenreId, new SelectList(Model.Genres, "GenreId", "GenreName"), "Select Genre", new { @class = "form-control" })
     </div>
 
     @Html.HiddenFor(m => m.Book.BookId)
 
-    var c = @Model.Book.BookId> 0 ? "Update" : "Save";
+    var c = @Model.Book.BookId > 0 ? "Update" : "Save";
     <button type="submit" class="btn btn-primary">@c</button>
 }   

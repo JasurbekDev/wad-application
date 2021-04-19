@@ -13,5 +13,6 @@ namespace WAD.WebApp._7986.BookRent.Models
 
         }
         public DbSet<Book> Book { get; set; }
+        public DbSet<Genre> Genre { get; set; }
     }
 }

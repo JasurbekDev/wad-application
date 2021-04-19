@@ -7,13 +7,13 @@ namespace WAD.WebApp._7986.BookRent.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class UpdateBookData : IMigrationMetadata
+    public sealed partial class UpdateGenreData : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateBookData));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateGenreData));
         
         string IMigrationMetadata.Id
         {
-            get { return "202104190921363_UpdateBookData"; }
+            get { return "202104191243144_UpdateGenreData"; }
         }
         
         string IMigrationMetadata.Source
