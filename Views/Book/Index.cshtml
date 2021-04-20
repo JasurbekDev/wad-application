@@ -7,7 +7,7 @@
 <h2>Book Details</h2>
 <hr />
 
-<button class="">@Html.ActionLink("Add Books", "AddBook")</button>
+@Html.ActionLink("Add Books", "AddBook", "Book", null, new { id = "OT", style = "color: white; margin-bottom: 1rem", @class = "btn btn-primary" })
 
 
 <table class="table">
@@ -24,14 +24,14 @@
     <tbody>
         @foreach (var book in Model)
         {
-        <tr>
-            <td>@book.Book.Title</td>
-            <td>@book.Book.Author</td>
-            <td>@book.Book.PublishedDate</td>
-            <td>@book.Genre.GenreName</td>
-            <td>@Html.ActionLink("Edit", "Edit", new { id = book.Book.BookId })</td>
-            <td>@Html.ActionLink("Delete", "Delete", new { id = book.Book.BookId })</td>
-        </tr>
+            <tr>
+                <td>@book.Book.Title</td>
+                <td>@book.Book.Author</td>
+                <td>@book.Book.PublishedDate</td>
+                <td>@book.Genre.GenreName</td>
+                <td>@Html.ActionLink("Edit", "Edit", new { id = book.Book.BookId })</td>
+                <td>@Html.ActionLink("Delete", "Delete", new { id = book.Book.BookId })</td>
+            </tr>
 
         }
     </tbody>
